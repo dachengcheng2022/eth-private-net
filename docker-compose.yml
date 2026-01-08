@@ -19,16 +19,15 @@ services:
       - "202401"
       - --http
       - --http.addr
-      - 0.0.0.0
+      - "0.0.0.0"
       - --http.port
       - "8545"
       - --http.api
-      - eth,net,web3,personal,miner,admin
+      - "eth,net,web3,personal,miner,admin"
       - --allow-insecure-unlock
       - --unlock
       - "0xd415E56CD4833489B544c838681544959666f0F4"
       - --password
       - /password.txt
       - --mine
-      - --verbosity
-      - "3"
+
