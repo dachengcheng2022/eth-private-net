@@ -6,3 +6,7 @@ docker run --rm -it \
   account new --datadir /data
 ```
 
+### run docker
+```shell
+docker compose up -d
+```
