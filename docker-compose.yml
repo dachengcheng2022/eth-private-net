@@ -17,17 +17,17 @@ services:
         echo '>>> init genesis';
         geth init /genesis.json --datadir /data;
       fi &&
-      geth
-        --datadir /data
-        --networkid 202401
-        --http
-        --http.addr 0.0.0.0
-        --http.port 8545
-        --http.api eth,net,web3,personal,miner,admin
-        --allow-insecure-unlock
-        --unlock 0x9Fa52ee94c5E3c8fb15B5d64A47d84aF809e2caF
-        --password /password.txt
-        --mine
-        --miner.threads 1
+      geth \
+        --datadir /data \
+        --networkid 202401 \
+        --http \
+        --http.addr 0.0.0.0 \
+        --http.port 8545 \
+        --http.api eth,net,web3,personal,miner,admin \
+        --allow-insecure-unlock \
+        --unlock 0xA1B2C3D4E5F6A1B2C3D4E5F6A1B2C3D4E5F6 \
+        --password /password.txt \
+        --mine \
+        --miner.threads 1 \
         --verbosity 3
       "
