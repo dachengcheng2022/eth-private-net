@@ -30,7 +30,5 @@ services:
       - --password
       - /password.txt
       - --mine
-      - --miner.threads
-      - "1"
       - --verbosity
       - "3"
