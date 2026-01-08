@@ -30,4 +30,7 @@ services:
       - --password
       - /password.txt
       - --mine
+      - --miner.etherbase 
+      - "0xd415E56CD4833489B544c838681544959666f0F4"
+
 
