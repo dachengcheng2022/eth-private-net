@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  geth:
+    image: ethereum/client-go:v1.13
+    container_name: geth-private
+    volumes:
+      - ./data:/data
+      - ./genesis.json:/genesis.json
+      - ./password.txt:/password.txt
+    ports:
+      - "8545:8545"
+      - "30303:30303"
+    command: >
+      sh -c "
+      geth init /genesis.json --datadir /data &&
+      geth
+        --datadir /data
+        --networkid 202401
+        --http
+        --http.addr 0.0.0.0
+        --http.port 8545
+        --http.api eth,net,web3,personal,miner,admin
+        --allow-insecure-unlock
+        --unlock 0
+        --password /password.txt
+        --mine
+        --miner.threads 1
+      "
