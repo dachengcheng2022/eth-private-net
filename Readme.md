@@ -2,7 +2,7 @@
 ```shell
 docker run --rm -it \
   -v $(pwd)/data:/data \
-  ethereum/client-go:alltools-latest \
+  ethereum/client-go:alltools-v1.13.15 \
   geth account new --datadir /data
 ```
 
@@ -11,7 +11,7 @@ docker run --rm -it \
 docker run --rm \
   -v $(pwd)/data:/data \
   -v $(pwd)/genesis.json:/genesis.json \
-  ethereum/client-go:alltools-latest \
+  ethereum/client-go:alltools-v1.13.15 \
   geth --datadir /data init /genesis.json
 ```
 
