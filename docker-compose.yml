@@ -26,7 +26,7 @@ services:
       - eth,net,web3,personal,miner,admin
       - --allow-insecure-unlock
       - --unlock
-      - "0xA1B2C3D4E5F6A1B2C3D4E5F6A1B2C3D4E5F6"
+      - "0x146e301506e93CDF98071c0B30f14C5B72c8d26E"
       - --password
       - /password.txt
       - --mine
