@@ -23,7 +23,7 @@ services:
       - --http.port
       - "8545"
       - --http.api
-      - "eth,net,web3,personal,miner,admin"
+      - "eth,net,web3,personal,miner,admin,trace"
       - --allow-insecure-unlock
       - --unlock
       - "0xd415E56CD4833489B544c838681544959666f0F4"
